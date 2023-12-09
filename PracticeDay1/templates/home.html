@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-    <div style="display: flex; gap: 20px;">
-        <h4><a href="/" style="text-decoration: none; color: black;">Home</a></h4>
-        <h4><a href="/first_app/about" style="text-decoration: none; color: black;">About</a></h4>
-        <h4><a href="/first_app/contact" style="text-decoration: none; color: black;">Contact</a></h4>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <div style="background: black; display: flex; gap: 20px; padding: 8px">
+      <h4><a href="/" style="text-decoration: none; color: white">Home</a></h4>
+      <h4>
+        <a href="/first_app/about" style="text-decoration: none; color: white"
+          >About</a
+        >
+      </h4>
+      <h4>
+        <a href="/first_app/contact" style="text-decoration: none; color: white"
+          >Contact</a
+        >
+      </h4>
     </div>
-   
-    <h1>This is Home page</h1>
-    
-    <h3>Length: {{val | length }}</h3>
-    <h3>After Add 5: {{value | add:"5" }}</h3>
-    <h3>Add slashes: {{ val | addslashes }}</h3>
-    <h3>Capfirst: {{ val | capfirst }}</h3>
-    <h3>Center: "{{ val | center:"15" }}"</h3>
-    <h3>Cut: {{ val | cut:" " }}</h3>
-    <h3>Date: {{ birthday | date:"D d M Y" }}</h3>
-    <h3>{{ '' | default:"nothing" }}</h3>
-    <h3>{{ student | dictsort:"age" }}</h3>
-    <h3>{{ value | divisibleby:"3" }}</h3>
-    <h3>{{ val | filesizeformat }}</h3>
-    <h3>{{ lst | first }}</h3>
-    <h3>{{ lst | join:" // " }}</h3>
-    <h3>{{ lst | last }}</h3>
-    <h3>{{ val | linenumbers }}</h3>
-    <h3>{{ val | lower }}</h3>
-    <h3>{{ val | upper }}</h3>
-    <h3>{{  author | make_list }}</h3>
-    <h3>{{ lst | random }}</h3>
-    <h3>{{ lst | slice:":2" }}</h3>
-    <h3>{{ val | slugify }}</h3>
-    <h3>{{ birthday | time:"H:i" }}</h3>
-    <h3>{{ val | title }}</h3>
-    <h3>{{ lst | unordered_list }}</h3>
-    <h3>{{ val | wordcount }}</h3>
-    <h3>{{ dtag | escape}}</h3>
-    <h3>{{ birthday | time:"H\h i\m"}}</h3>
-    <h3>{{birthday | timesince}}</h3>
-    <h3>{{ val | truncatechars:4}}</h3>
-    <h3>{{val | truncatewords:1}}</h3>
-    <h3>You have {{ num_messages }} message {{ num_messages | pluralize }}.</h3>
-    <h3>{{dtag | striptags}}</h3>
-</body>
+
+    <h1 style="text-align: center">This is Home page</h1>
+
+    <div style="padding-left: 40px;">
+      <h3>Length: {{val | length }}</h3>
+      <h3>After Add 5: {{value | add:"5" }}</h3>
+      <h3>Add slashes: {{ val | addslashes }}</h3>
+      <h3>Capfirst: {{ val | capfirst }}</h3>
+      <h3>Center: "{{ val | center:"15" }}"</h3>
+      <h3>Cut: {{ val | cut:" " }}</h3>
+      <h3>Date: {{ birthday | date:"D d M Y" }}</h3>
+      <h3>{{ '' | default:"nothing" }}</h3>
+      <h3>{{ student | dictsort:"age" }}</h3>
+      <h3>{{ value | divisibleby:"3" }}</h3>
+      <h3>{{ val | filesizeformat }}</h3>
+      <h3>{{ lst | first }}</h3>
+      <h3>{{ lst | join:" // " }}</h3>
+      <h3>{{ lst | last }}</h3>
+      <h3>{{ val | linenumbers }}</h3>
+      <h3>{{ val | lower }}</h3>
+      <h3>{{ val | upper }}</h3>
+      <h3>{{ author | make_list }}</h3>
+      <h3>{{ lst | random }}</h3>
+      <h3>{{ lst | slice:":2" }}</h3>
+      <h3>{{ val | slugify }}</h3>
+      <h3>{{ birthday | time:"H:i" }}</h3>
+      <h3>{{ val | title }}</h3>
+      <h3>{{ lst | unordered_list }}</h3>
+      <h3>{{ val | wordcount }}</h3>
+      <h3>{{ dtag | escape}}</h3>
+      <h3>{{ birthday | time:"H\h i\m"}}</h3>
+      <h3>{{birthday | timesince}}</h3>
+      <h3>{{ val | truncatechars:4}}</h3>
+      <h3>{{val | truncatewords:1}}</h3>
+      <h3>
+        You have {{ num_messages }} message {{ num_messages | pluralize }}.
+      </h3>
+      <h3>{{dtag | striptags}}</h3>
+    </div>
+  </body>
 </html>
